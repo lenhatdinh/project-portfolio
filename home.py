@@ -10,15 +10,15 @@ st.set_page_config(
 with open("intro.txt", encoding="utf-8") as file:
     intro = file.read()
 
-_, avatar_col, intro_col, _ = st.columns([1, 1, 2, 1])
+_, avatar_col, intro_col, _ = st.columns([1, 1, 1.5, 1])
 
 with avatar_col:
-    st.container(height=3, border=False)
+    st.container(height=1, border=False)
     st.image("avatar.jpg")
 
 with intro_col:
-    with st.container(height=270, border=False):
-        st.header("Benz")
+    st.header("Benz")
+    with st.container(height=220, border=False):
         st.info(intro)
 
 # Project Showcase:
