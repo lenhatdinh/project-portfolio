@@ -18,23 +18,19 @@ with avatar_col:
 
 with intro_col:
     st.header("Benz")
-    with st.container(height=220, border=False):
-        st.info(intro)
+    st.container(height=220, border=False).info(intro)
 
 # Project Showcase:
 project_cols = st.columns(3)
 
-with project_cols[0]:
-    with st.container(border=True):
-        st.header("Chatbot")
-        st.write("Description here")
+with project_cols[0].container(border=True):
+    st.header("[Chatbot](https://github.com/lenhatdinh/chatbot)")
+    st.write("Description here")
 
-with project_cols[1]:
-    with st.container(border=True):
-        st.header("Project 2")
-        st.write("Description here")
+with project_cols[1].container(border=True):
+    st.header("Project 2")
+    st.write("Description here")
 
-with project_cols[2]:
-    with st.container(border=True):
-        st.header("Project 3")
-        st.write("Description here")
+with project_cols[2].container(border=True):
+    st.header("Project 3")
+    st.write("Description here")
