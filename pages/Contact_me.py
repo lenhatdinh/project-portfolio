@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config("Contact me", layout="centered")
 
-st.columns(3)[1].title("Contact me")
+st.columns([1.4, 2, 1])[1].title("Contact me")
 
 def verify_and_send():
     email, message = st.session_state["email"], st.session_state["message"]
